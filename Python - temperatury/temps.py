@@ -53,8 +53,8 @@ MIN = temps[0][0]
 
 #Znajdź najmniejsze i największe wartości w posortowanej tablicy
 while ti < len(temps):
-    if MAX < temps[ti][len(temps)-1]:
-        MAX = temps[ti][len(temps)-1]
+    if MAX < temps[ti][len(temps[ti])-1]:
+        MAX = temps[ti][len(temps[ti])-1]
     if MIN > temps[ti][0]:
         MIN = temps[ti][0]
     ti += 1
