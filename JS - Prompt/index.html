@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Czy jesteœ pe³noletni?</title>
+</head>
+<body style="background-color: blueviolet; color: white;">
+    <div id="dorosly" style="display: none">
+        Gratulacje jesteœ doros³y! <br />
+        Mo¿esz trafiæ do wiêzienia! <br />
+    </div>
+    <div id="dziecko" style="display: none">
+        Gratulacje jesteœ jeszcze dzieckiem! <br />
+        Nie mo¿esz trafiæ do wiêzienia! <br />
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    var wiek = prompt("Ile ty masz lat ch³opcze?");
+
+    if (wiek > 18) {
+        var x = document.getElementById("dorosly");
+        if (x.style.display == "none")
+            x.style.display = "inline";
+    }
+    else {
+        var x = document.getElementById("dziecko");
+        if (x.style.display == "none")
+            x.style.display = "inline";
+    }
+        
+</script>
